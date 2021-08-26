@@ -70,7 +70,6 @@ a:hover{
 }
 .landing-page-about h2{
 	font-size:1.2rem;
-	color:red;
 }
 .landing-page-about p{
 	font-size:1rem;
@@ -96,7 +95,6 @@ h2{
 @media(max-width:500px){
 .landing-page-about h2{
 	font-size:1rem;
-	color:purple;
 }
 .landing-page-about p{
 	font-size:.9rem;

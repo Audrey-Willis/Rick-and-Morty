@@ -1,6 +1,39 @@
 import styled from "styled-components";
 
 export const CharacterDataStyle = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+.character-header{
+font-family: 'Neucha', cursive;
+width:98%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.character-nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:90%;
+  margin-top:5%;
+  border:3px double limegreen;
+  padding:2%;
+  
+}
+.character-nav .character-nav-link{
+  font-size:2rem;
+  color:antiquewhite;
+  text-decoration:none;
+}
+.character-nav .character-nav-link:hover{
+  transform:scale(1.1);
+  color:limegreen;
+}
   .characters {
     display: flex;
     flex-wrap: wrap;
@@ -10,17 +43,13 @@ export const CharacterDataStyle = styled.div`
     width: 70%;
     margin: 5%;
   }
-  img:hover {
-    width: 90%;
-  }
   .character-page-top {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    align-items:center;
+    justify-content:center;
     text-align: center;
-    margin-left: 15%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top:15%;
   }
   .searchAndPageButton {
     display: flex;
@@ -54,23 +83,31 @@ export const CharacterDataStyle = styled.div`
     
   }
   .character-page-top h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    color:limegreen;
   }
   h2 {
     font-size: 2rem;
-  }
-  .character-page-top p{
-    font-size:1.3rem;
-  }
-  @media(max-width:800px){
-  .character-page-top h1{
-    font-size:1.3rem;
+    color:limegreen;
   }
   .character-page-top p{
     font-size:1rem;
+    color:antiquewhite;
+    width:60%;
+  }
+  @media(max-width:800px){
+  .character-page-top h1{
+    font-size:2rem;
+  }
+  .character-page-top p{
+    font-size:1rem;
+    width:70%;
   }
   .searchBar h2{
-    font-size:1.3rem;
+    font-size:1.5rem;
+  }
+  .character-nav .character-nav-link{
+    font-size:1.4rem;
   }
   input{
     font-size:1rem;
@@ -80,6 +117,14 @@ export const CharacterDataStyle = styled.div`
   }
   }
   @media(max-width:500px){
+    .character-nav{
+      flex-direction:column;
+      border:none;
+    }
+    .character-nav .character-nav-link{
+      margin-bottom:2%;
+      font-size:1.5rem;
+    }
   .characters{
     flex-direction:column;
     align-items:center;
@@ -89,13 +134,14 @@ export const CharacterDataStyle = styled.div`
     font-size:1rem;
   }
   .character-page-top h1{
-    font-size:1rem;
+    font-size:1.5rem;
   }
   .character-page-top p{
     font-size:1rem;
+    width:80%;
   }
   .searchBar h2{
-    font-size:1rem;
+    font-size:1.3rem;
   }
   input{
     font-size:1rem;

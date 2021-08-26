@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import {QuoteGeneratorStyle} from "./Quote-Generator-Style";
+import {Link} from "react-router-dom";
 
 let quotes = [
   {quote:"What, so everyone’s supposed to sleep every single night now? You realize that nighttime makes up half of all time?", speaker:"Rick"},
@@ -32,9 +33,16 @@ function QuoteGenerator(){
     };
     return (
       <QuoteGeneratorStyle>
+        <header className="quote-header">
+          <div className="quote-nav">
+            <Link className="quote-nav-link" to="/rick-and-morty">Home</Link>
+            <Link className="quote-nav-link" to="/Characters">Characters</Link>
+            <Link className="quote-nav-link" to="/QuoteGenerator">Quote Generator</Link>
+          </div>
+        </header>
         <div className="page-top">
-          <h1>Quote Generator</h1>
-          <p>
+          <h1 className = "quote-first-header">Quote Generator</h1>
+          <p className = "quote-p">
             Our quote generator is easy to use and fun!, just click the button
             below to see a randomized quote from Rick and Morty. It will soon
             have you in stitches or make you stop and think.

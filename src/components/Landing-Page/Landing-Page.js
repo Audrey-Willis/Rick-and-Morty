@@ -1,10 +1,12 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {LandingPageStyle} from "./Landing-Page-Style"
+import Header from "../Header/Header";
 
 function LandingPage(){
 return (
   <LandingPageStyle>
+    <Header/>
     <div className = "about-container">
     <div className="landing-page-about">
       <h2> Welcome to All Fellow Multi-Dimensional Adventurers!</h2>

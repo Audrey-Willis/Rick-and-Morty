@@ -6,9 +6,11 @@ import {NavStyle} from "./Nav-Style";
 function Nav(){
     return (
       <NavStyle>
-          <Link to = "/rick-and-morty"> Home </Link>
-          <Link to= "/Characters">Characters</Link>
-          <Link to="/QuoteGenerator">Quote Generator </Link>
+        <div className = "top-nav">
+          <Link className = "top-nav-link"to = "/rick-and-morty"> Home </Link>
+          <Link className = "top-nav-link"to= "/Characters">Characters</Link>
+          <Link className = "top-nav-link"to="/QuoteGenerator">Quote Generator </Link>
+          </div>
       </NavStyle>
     );
 }

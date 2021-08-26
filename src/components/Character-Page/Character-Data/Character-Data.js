@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import CharacterContainer from '../Character-Container/Character-Container';
 import axios from "axios";
 import {CharacterDataStyle} from "./Character-Data-Style"
+import {Link} from "react-router-dom";
 
 
 
@@ -44,6 +45,13 @@ function CharacterPage() {
   };
   return (
     <CharacterDataStyle>
+      <header className="character-header">
+        <div className="character-nav">
+          <Link className="character-nav-link" to="/rick-and-morty"> Home</Link>
+          <Link className="character-nav-link" to="/Characters">Characters</Link>
+          <Link className="character-nav-link" to="/QuoteGenerator">Quote Generator</Link>
+        </div>
+      </header>
       <div className="character-page-top">
         <h1>Character List</h1>
         <p>

@@ -1,30 +1,36 @@
 import styled from 'styled-components';
 
 export const NavStyle = styled.div`
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 90%;
-  a {
-    color: black;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:98%;
+.top-nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:90%;
+}
+  .top-nav .top-nav-link {
+    color:black;
     text-decoration: none;
     width: 20%;
     padding: 1.5%;
-    color: black;
     margin-bottom: 2%;
     font-size:1.5rem;
   }
-  a:hover {
-    color: darkgreen;
+  .top-nav .top-nav-link:hover {
+    color: gold;
     font-size: 1.3rem;
   }
 
   @media (max-width: 800px) {
-  a {
+  .top-nav .top-nav-link{
     font-size: 1.2rem;
     width: 40%;
   }
-  a:hover {
+  .top-nav .top-nav-link:hover {
     font-size: 1rem;
     color: darkgreen;
   }

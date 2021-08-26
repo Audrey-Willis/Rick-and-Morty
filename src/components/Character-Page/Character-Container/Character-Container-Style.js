@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CharacterContainerStyle = styled.div`
   width:30%;
-  height:80vh;
+  height:100vh;
 .character-cards {
   display: flex;
   flex-direction: column;
