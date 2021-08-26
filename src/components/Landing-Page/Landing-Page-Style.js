@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const LandingPageStyle = styled.div`
 	margin:5%;
 	text-align:center;
+	.about-container{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	}
 .links{
 	display:flex;
 	justify-content:space-evenly;
@@ -16,7 +22,7 @@ export const LandingPageStyle = styled.div`
 	width:50%;
 	margin:2%;
 	padding:3%;
-	height:90vh;
+	height:100vh;
 	border:2px darkgreen solid;
 	color:black;
 }
@@ -49,12 +55,13 @@ a:hover{
 }
 .landing-page-about{
 	margin-bottom:20%;
+	width:80%;
 }
 .landing-page-about h2{
-	font-size:2rem;
+	font-size:1.5rem;
 }
 .landing-page-about p{
-	font-size:1.5rem;
+	font-size:1.2rem;
 }
 
 @media(max-width:800px){
@@ -63,6 +70,7 @@ a:hover{
 }
 .landing-page-about h2{
 	font-size:1.2rem;
+	color:red;
 }
 .landing-page-about p{
 	font-size:1rem;
@@ -73,14 +81,14 @@ a:hover{
  }
 .linkDivsText{
 	font-size:.9rem;
-	width:50%;
+	width:80%;
 }
 .linkDivs .linkDivsText{
 	font-size:1rem;
 }
 img{
 	height:35vh;
-	width:50%
+	width:70%
  }
 h2{
 	font-size:1rem;
@@ -88,6 +96,7 @@ h2{
 @media(max-width:500px){
 .landing-page-about h2{
 	font-size:1rem;
+	color:purple;
 }
 .landing-page-about p{
 	font-size:.9rem;

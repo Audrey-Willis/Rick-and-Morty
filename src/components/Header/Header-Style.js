@@ -8,13 +8,13 @@ export const HeaderStyle = styled.div`
 	flex-direction:column;
 	justify:content:center;
 	align-items:center;
-	font-family:cursive;
+	font-family: 'Neucha', cursive;
 	color:black;
 	margin:5%;
 	margin-bottom:20%;
 
 img{
-	height: 50vh;
+	height: 60vh;
 	width:95%;
 }
 .image-text{
@@ -36,10 +36,10 @@ img{
 	height:40vh;
 }
 .image-text h1{
-	font-size:1.5rem;
+	font-size:2rem;
 }
 .image-text h2{
-	font-size:1.2rem;
+	font-size:1.5rem;
 }
 }
 @media(max-width:500px){
@@ -47,10 +47,10 @@ img{
 	height:30vh;
 }
 .image-text h1{
-	font-size:1.2rem;
+	font-size:1.5rem;
 }
 .image-text h2{
-	font-size:1rem;
+	font-size:1.2rem;
 }
 h3{
 	font-size:1rem;

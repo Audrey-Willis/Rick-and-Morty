@@ -5,6 +5,7 @@ import {LandingPageStyle} from "./Landing-Page-Style"
 function LandingPage(){
 return (
   <LandingPageStyle>
+    <div className = "about-container">
     <div className="landing-page-about">
       <h2> Welcome to All Fellow Multi-Dimensional Adventurers!</h2>
       <p>
@@ -12,6 +13,7 @@ return (
         it's filled with deep emotional scenes, struggles with mental health,the short-comings of man, AND humor. This mixture of deep and humorous is what makes this show so relatable to others. It's a show with a
         dedicated fan base, and a big following. Heres to hoping it stays around for a while, and continues to bring us the amazing story lines we've come to expect.
       </p>
+    </div>
     </div>
     <div className="links">
       <div className="linkDivs characterDiv">

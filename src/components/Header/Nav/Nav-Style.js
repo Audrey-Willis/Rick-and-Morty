@@ -21,7 +21,7 @@ export const NavStyle = styled.div`
 
   @media (max-width: 800px) {
   a {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     width: 40%;
   }
   a:hover {
